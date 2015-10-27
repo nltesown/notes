@@ -1,0 +1,21 @@
+# Dependencies
+markdown: redcarpet
+highlighter: pygments
+
+# Permalinks
+# permalink: pretty
+# relative_permalinks: true
+
+# Setup
+# title:
+# tagline:
+# description:
+# url:
+# baseurl:
+# paginate:
+
+# Custom vars
+# version:
+
+github:
+  repo: https://github.com/nltesown/notes/
