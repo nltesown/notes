@@ -7,10 +7,26 @@ layout: default
     {{ content }}
   </div>
   <div class="aside small-12 medium-4 columns">
+    <div class="sectionTitle">Tagged</div>
+    <ul class="tags">
+      {% for tag in page.tags %}
+        <li>
+          <a href="#">{{ tag }}</a>
+        </li>
+      {% endfor %}      
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="small-12 medium-8 columns">
+    <div class="sectionTitle">Latest posts</div>
     <ul>
       {% for post in site.posts %}
         <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="date">({{ post.date | date: '%b %d, %Y' }})</span>
         </li>
       {% endfor %}
     </ul>
