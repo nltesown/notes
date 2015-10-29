@@ -5,9 +5,7 @@ layout: default
   <div class="small-12 medium-8 columns">
     <h1>{{ page.title }}</h1>
     {{ content }}
-  </div>
-  <div class="aside small-12 medium-4 columns">
-    <div class="sectionTitle">Tagged</div>
+
     <ul class="tags">
       {% for tag in page.tags %}
         <li>
@@ -15,7 +13,10 @@ layout: default
         </li>
       {% endfor %}      
     </ul>
+
+
   </div>
+  <div class="aside small-12 medium-4 columns"></div>
 </div>
 
 

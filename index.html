@@ -1,6 +1,11 @@
 ---
 layout: post
 ---
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="date">({{ post.date | date: '%b %d, %Y' }})</span>
+    </li>
+  {% endfor %}
+</ul>
 
-{{ site.posts.first.title }}
-{{ site.posts.first.content }}
